@@ -5,20 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/res/css/style.css" />
     <title>addPost</title>
 </head>
 
 <body>
-    <header>
+    <header class="navbar">
         <a href="index.html"><strong>Home</strong></a>
+        <img class="profilePicture" src="profile.jpg" alt="">
     </header>
     <section>
         <form action="index.html" method="get">
-            <label for="postBody">Post body</label>
-            <textarea id ="postBody" name="postBody" rows="3" cols="15" placeholder="textarea"></textarea><br>
-            <label for="submitFile">Select file</label>
-            <input type="file" id="selectFile" name="selectFile"><br>
-            <input type="submit" value="Create post"><br>
+            <div id="postNew">
+                <label for="postBody">Post body</label>
+                <textarea id ="postBody" name="postBody" rows="3" cols="15" placeholder="Post text"></textarea><br>
+            </div>
+            <div id="addFile">
+                <label for="submitFile">Select file:</label>
+                <input type="file" id="selectFile" name="selectFile"><br>
+            </div>
+            <input id="submitButton" type="submit" value="Create post">
+            
         </form>
     </section>
 </body>

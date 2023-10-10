@@ -5,26 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/res/css/style.css" />
     <title>login</title>
 </head>
 
 <body>
-    <header>
+    <header class="navbar">
         <a href="index.html"><strong>Home</strong></a>
+        <img class="profilePicture" src="profile.jpg" alt="">
     </header>
     <section>
-        <h1>Welcome to PostIt</h1>
-        <p>
-            Create an account<br>
-            or<br>
-            Please log in<br>
-        </p>
+        
         <form action="index.html" method="get">
-            <input type="text" id="Email" name="Email" placeholder="Email" required><br>
-            <input type="text" id="Password" name="Password" placeholder="Password" required><br>
-            <input type="submit" value="Log in"><br>
+            <h1>Welcome to PostIt</h1>
+            <p class="linkText">
+                Create an account
+            </p>
+            <p>or <br> Please log in</p>
+            <input type="email" id="Email" name="Email" placeholder="Email" required><br>
+            <input type="password" id="Password" name="Password" placeholder="Password" required><br>
+            <input id="submitButton" type="submit" value="Log in">
+            <p class="linkText">Forget password</p>
         </form>
-        Forget password<br>
+        
     </section>
 </body>
 </html>
