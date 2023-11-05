@@ -1,5 +1,15 @@
+// window.onload = function() {
+//     fetch("https://api.npoint.io/3f4694ef55128b25424a")
+//         .then((response) => response.json())
+//         .then(json => {
+//             addPostsFromJSON(json);
+//         })
+//         .catch(error => {
+//             console.error(error);
+//         });
+// };
 window.onload = function() {
-    fetch("https://api.npoint.io/3f4694ef55128b25424a")
+    fetch("res/json/posts.json")
         .then((response) => response.json())
         .then(json => {
             addPostsFromJSON(json);
@@ -8,6 +18,18 @@ window.onload = function() {
             console.error(error);
         });
 };
+
+function toggleDropdown() {
+    let dropdown = document.getElementById("dropdown");
+    if(dropdown.style.display === "none"){
+        dropdown.style.display = "block";
+    }
+    else {
+        dropdown.style.display = "none";
+    }
+    
+}
+
 
 function addPostsFromJSON(posts) {
     let section = document.getElementById("posts");
